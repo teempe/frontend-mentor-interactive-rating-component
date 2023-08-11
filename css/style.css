@@ -1,0 +1,237 @@
+:root {
+  --color-orange: #FC7614;
+  --color-white: #FFF;
+  --color-light-gray: #969FAD;
+  --color-medium-gray: #7C8798;
+  --color-dark-blue: #262E38;
+  --color-very-dark-blue: #131518;
+  --black-gradient: radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%);
+  --ff-base: "Overpass", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: var(--color-light-gray);
+}
+@media only screen and (min-width: 90em) {
+  body {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
+.card-heading {
+  font-weight: var(--fw-bold);
+  font-size: 2.4rem;
+  line-height: normal;
+  color: var(--color-white);
+  margin-block-end: 1.3rem;
+}
+@media only screen and (min-width: 90em) {
+  .card-heading {
+    font-size: 2.8rem;
+    margin-block-end: 1rem;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn {
+  font-weight: var(--fw-bold);
+  font-size: inherit;
+  letter-spacing: 0.19rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 1.4rem 0;
+  background-color: var(--color-orange);
+  border-radius: 22.5rem;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 90em) {
+  .btn {
+    padding: 1.4rem 0 1.4rem;
+  }
+}
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+@media only screen and (min-width: 90em) {
+  .form {
+    row-gap: 3.2rem;
+  }
+}
+.form__radio-group {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.7rem;
+}
+@media only screen and (min-width: 90em) {
+  .form__radio-group {
+    column-gap: 2.1rem;
+  }
+}
+.form__radio-label {
+  display: inline-block;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  background-color: var(--color-dark-blue);
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+@media only screen and (min-width: 90em) {
+  .form__radio-label {
+    width: 5.1rem;
+    height: 5.1rem;
+  }
+}
+.form__radio-label-text {
+  font-weight: var(--fw-bold);
+  line-height: 2.4rem;
+  letter-spacing: 0.02rem;
+  color: var(--color-medium-gray);
+}
+@media only screen and (min-width: 90em) {
+  .form__radio-label-text {
+    font-size: 1.6rem;
+  }
+}
+.form__radio-label:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+.form__radio-input {
+  display: none;
+}
+.form__radio-input:checked + .form__radio-label {
+  background-color: var(--color-medium-gray);
+  color: var(--color-white);
+}
+
+.rate-card {
+  max-width: 32.7rem;
+  border-radius: 1.5rem;
+  background: var(--black-gradient);
+  padding: 2.4rem 2.4rem 3.2rem 2.4rem;
+}
+@media only screen and (min-width: 90em) {
+  .rate-card {
+    max-width: 41.2rem;
+    border-radius: 3rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .rate-card {
+    padding: 3.2rem;
+  }
+}
+.rate-card__hero {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: no-repeat center url("../images/icon-star.svg"), var(--color-dark-blue);
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 90em) {
+  .rate-card__hero {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-bottom: 3.4rem;
+  }
+}
+.rate-card .card-description {
+  margin-bottom: 2.4rem;
+}
+
+.thanks-card {
+  max-width: 32.7rem;
+  border-radius: 1.5rem;
+  background: var(--black-gradient);
+  padding: 3.4rem 2.4rem 3.7rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 90em) {
+  .thanks-card {
+    max-width: 41.2rem;
+    border-radius: 3rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .thanks-card {
+    padding: 4.5rem 3.2rem 4.5rem 3.2rem;
+  }
+}
+.thanks-card__hero {
+  width: 14.4rem;
+  height: 9.6rem;
+  background: no-repeat center/cover url("../images/illustration-thank-you.svg");
+  margin-bottom: 2.4rem;
+}
+@media only screen and (min-width: 90em) {
+  .thanks-card__hero {
+    width: 16.2rem;
+    height: 10.8rem;
+    margin-bottom: 3.2rem;
+  }
+}
+.thanks-card__rating {
+  color: var(--color-orange);
+  background-color: var(--color-dark-blue);
+  border-radius: 2.25rem;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 2.8rem;
+}
+@media only screen and (min-width: 90em) {
+  .thanks-card__rating {
+    padding: 0.4rem 1.9rem;
+    margin-bottom: 3.6rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

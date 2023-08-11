@@ -1,0 +1,23 @@
+.btn {
+    font-weight: var(--fw-bold);
+    font-size: inherit;
+    letter-spacing: 0.19rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    padding: 1.4rem 0;
+    background-color: var(--color-orange);
+    border-radius: 22.5rem;
+
+    border: none;
+    cursor: pointer;
+
+    @media only screen and (min-width: $bp-width-desktop) {
+        padding: 1.4rem 0 1.4rem;
+    }
+
+    &:hover {
+        background-color: var(--color-white);
+        color: var(--color-orange);
+    }
+}

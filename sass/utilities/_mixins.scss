@@ -1,0 +1,10 @@
+@mixin card-layout {
+    max-width: 32.7rem;
+    border-radius: 1.5rem;
+    background: var(--black-gradient);
+
+    @media only screen and (min-width: $bp-width-desktop) {
+        max-width: 41.2rem;
+        border-radius: 3rem;
+    }
+}

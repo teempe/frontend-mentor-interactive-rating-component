@@ -1,0 +1,16 @@
+{
+  "name": "frontend-mentor-interactive-rating-component",
+  "version": "1.0.0",
+  "description": "Frontend Mentor - Interactive rating component solution",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "teempe",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.65.1"
+  }
+}
